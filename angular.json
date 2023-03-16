@@ -6,7 +6,7 @@
     "bwn-cli": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
+      "root": "src",
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
@@ -25,9 +25,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "../bwn-cli/node_modules/bootstrap/dist/css/bootstrap.min.css"
+              
             ],
             "scripts": []
+          },
+          "stylePreprocessorOptions": {
+            "includesPaths":[
+              "./src/styles"
+            ]
+
           },
           "configurations": {
             "production": {
@@ -87,12 +95,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "19f8a75d-04b2-43cb-95a2-671526d81347"
   }
 }

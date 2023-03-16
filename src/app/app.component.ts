@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bwn-cli';
+  componentTitle = "I am App Component from component.ts";
+
+  clickHandler() {
+    alert("I AM CLICKED!!");
+  }
 }
